@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/owner/project/issues",
+  "email": "project@hostname.com",
+  "dependencies": {
+    "node-static": "^0.7.7",
+    "request": "^2.67.0"
+  },
+  "devDependencies": {
+  }
+}
