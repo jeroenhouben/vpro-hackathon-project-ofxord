@@ -5,12 +5,27 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="scripts.js"></script>
 
+    <style media="screen">
+        .preview-container {
+            position: relative;
+        }
+        .preview-container .overlay {
+            position: absolute;
+            display: block;
+            color: #000;
+            text-shadow: 1px 1px #fff;
+            padding: 26px;
+        }
+    </style>
+
 </head>
 <body>
 
     <h1>Face API</h1>
 
-    <img id="face-api-upload-preview" width="700" />
+    <div class="preview-container">
+        <img id="face-api-upload-preview" width="700" />
+    </div>
 
     <label for="plaatje">Plaatje</label>
     <input type="file" name="upload" id="face-api-upload">

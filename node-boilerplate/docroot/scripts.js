@@ -14,16 +14,35 @@ function uploadToFaceAPI(image) {
     xhr.open("POST", url, true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            $("#face-api-response").text(xhr.responseText);
+            decorateFaceApiUpload(JSON.parse(xhr.responseText));
         }
     };
     fd.append('image', image);
     xhr.send(fd);
 }
 
+function decorateFaceApiUpload(faces) {
+    var $imgPreview = $("#face-api-upload-preview");
+    var sizeRatio = $imgPreview[0].width / $imgPreview[0].naturalWidth;
+
+    var face;
+    var $overlay;
+
+    for (var i = 0; i < faces.length; i++) {
+        face = faces[i];
+
+        $overlay = $('<div class="overlay" />').text(face.attributes.age + " " + face.attributes.gender);
+        $overlay.css({
+            top: face.faceRectangle.top * sizeRatio,
+            left: face.faceRectangle.left * sizeRatio
+        })
+        $overlay.appendTo($imgPreview.parent());
+    }
+
+    $("#face-api-response").text(JSON.stringify(faces));
+}
+
 $(document).ready(function () {
-
-
     $('#face-api-upload').on("change", function (e) {
         var image = e.target.files[0];
         uploadToFaceAPI(image);
