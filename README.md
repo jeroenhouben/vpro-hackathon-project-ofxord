@@ -28,7 +28,8 @@ vervolgens heb je NPM nodig, maar dat is meestal al mee geinstalleerd met Node J
 3. npm install
 4. npm install -g nodemon (zodat changes aan de server code meteen beschikbaar zijn, zonder server reboot)
 5. nodemon server.js
-6. ga naar http://localhost:5050 en selecteer een plaatje waar een paar personen goed op staan met hun gezicht
 ```
+
+Ga naar http://localhost:5050 en selecteer een plaatje waar een paar personen goed op staan met hun gezicht
 
 
