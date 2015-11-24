@@ -30,6 +30,6 @@ vervolgens heb je NPM nodig, maar dat is meestal al mee geinstalleerd met Node J
 5. nodemon server.js
 ```
 
-Ga naar http://localhost:5050 en selecteer een plaatje waar een paar personen goed op staan met hun gezicht
+Ga naar [http://localhost:5050](http://localhost:5050) en selecteer een plaatje waar een paar personen goed op staan met hun gezicht
 
 
