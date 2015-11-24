@@ -1,11 +1,10 @@
 
 ## Boilerplate code voor hackathon
 
-Voor de hackathon van december 2015 hebben we vast wat boilerplate code geschreven die het mogelijk maakt om snel te kunnen doen met het [Project Oxford van Microsoft](https://www.projectoxford.ai/).
+Voor de hackathon van december 2015 hebben we vast wat boilerplate code geschreven die het mogelijk maakt om snel iets te kunnen doen met het [Project Oxford van Microsoft](https://www.projectoxford.ai/).
 
 De code bestaat uit een simpele backend (Node JS) en frontend (js/html/css) code.
-
-De backend is weinig meer dan een proxy, die de gemaakte browser request doorstuurt naar de Project Oxford Rest API.  
+Backend (`server.js`) is weinig meer dan een proxy, die de gemaakte browser request doorstuurt naar de Project Oxford Rest API.
 
 ### REST API
 
